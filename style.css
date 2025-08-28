@@ -59,6 +59,7 @@ header p{
     animation: typing2 12s steps(32, end) infinite, blinkMarker 0.7s step-end infinite;
     animation-delay: 4s, 4s;
     margin: 0px 0px 0px 12px;
+    font-size: 1.2em;
 }
 .frase3 {
     width: 25ch;
