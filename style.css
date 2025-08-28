@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+header p{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.msg-animada {
+    position: relative;
+    display: inline-block;
+    height: 3.5rem;
+}
+.frase {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-right: 4px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    color: red;
+    z-index: 1;
+    animation-fill-mode: both; /* Mantém o estado final da animação */
+    pointer-events: none;
+}
+.frase1 {
+    width: 18ch;
+    animation: typing1 12s steps(18, end) infinite, blinkMarker 0.7s step-end infinite;
+    animation-delay: 0s, 0s;
+    margin: 20px 0px 0px 60px;
+}
+.frase2 {
+    width: 32ch;
+    animation: typing2 12s steps(32, end) infinite, blinkMarker 0.7s step-end infinite;
+    animation-delay: 4s, 4s;
+    margin: 20px 0px 0px -15px;
+}
+.frase3 {
+    width: 25ch;
+    animation: typing3 12s steps(25, end) infinite, blinkMarker 0.7s step-end infinite;
+    animation-delay: 8s, 8s;
+    margin: 20px 0px 0px 40px;
+}
+
+@keyframes typing1 {
+    0%, 32.99%, 100% { opacity: 0; width: 0; z-index: 1; }
+    4% { opacity: 1; }
+    8%, 28% { width: 18ch; opacity: 1; }
+    32% { opacity: 1; }
+    33% { opacity: 0; width: 0; }
+}
+@keyframes typing2 {
+    0%, 32.99%, 100% { opacity: 0; width: 0; }
+    33%, 65.99% { opacity: 0; width: 0; }
+    37% { opacity: 1; }
+    41%, 61% { width: 32ch; opacity: 1; }
+    65% { opacity: 1; }
+    66% { opacity: 0; width: 0; }
+}
+@keyframes typing3 {
+    0%, 65.99%, 100% { opacity: 0; width: 0; }
+    66%, 100% { opacity: 0; width: 0; }
+    70% { opacity: 1; }
+    74%, 94% { width: 25ch; opacity: 1; }
+    98% { opacity: 1; }
+    99% { opacity: 0; width: 0; }
+}
+
+/* DESTAQUE */
+strong{
+    color: red;
+}
+
+
+
+/* MENU PRINCIAL */
+main{
+    padding: 20px;
+}
+
+main .tl1 h1{
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.829);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main .tl1 p{
+    text-align: center;
+}
+
+main .tl1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+main .conteiner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 270px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    padding: 10%;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
