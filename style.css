@@ -9,8 +9,8 @@ header {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    position: relative; /* Adicionado */
-    min-height: 180px;  /* Ajuste conforme necessário */
+    position: relative;
+    min-height: 180px;
 }
 
 header h1 {
@@ -150,16 +150,14 @@ main .conteiner a:hover{
     
     #particles-js {
     position: absolute;
-    top: 0; /* Garante que fique no topo do header */
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    pointer-events: none; /* Opcional: permite clicar nos elementos do header */
-} /* ---- stats.js ---- */
+    pointer-events: none;
+    z-index: 0;
+}
+
     .count-particles {
     background: #000022;
     position: absolute;
@@ -175,26 +173,37 @@ main .conteiner a:hover{
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     }
+
     .js-count-particles {
     font-size: 1.1em;
     }
+
     #stats,
     .count-particles {
     -webkit-user-select: none;
     margin-top: 5px;
     margin-left: 5px;
     }
+
     #stats {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
     }
+
     .count-particles {
     border-radius: 0 0 3px 3px;
     }
 
-
-
-
+/* Responsividade para header e partículas */
+@media (max-width: 600px) {
+    header {
+        min-height: 120px;
+        padding: 10px;
+    }
+    #particles-js {
+        min-height: 120px;
+    }
+}
 
 
 
